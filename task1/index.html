@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevConf 2026 | Registration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
   <header>
-    <h1>DevConf 2026</h1>
-    <p>Connect, Learn, and Build the Future</p>
-    <button id="theme-toggle">Switch Mode</button>
+    <div class="header-content">
+      <h1>DevConf <span>2026</span></h1>
+      <p>Connect, Learn, and Build the Future</p>
+      <button id="theme-toggle" class="btn-secondary">Switch to Dark Mode</button>
+    </div>
   </header>
 
   <main>
-    <section class="info-section">
+    <section class="card info-section">
       <h2>Tentang Event</h2>
-      <p>Bergabunglah dengan ribuan developer di seluruh dunia untuk membahas teknologi terbaru di ekosistem Google.</p>
+      <p>Bergabunglah dengan ribuan developer di seluruh dunia untuk membahas teknologi terbaru di ekosistem Google dan
+        tren industri terkini.</p>
       <ul class="info-list">
-        <li><strong>Tanggal:</strong> 20 Mei 2026</li>
-        <li><strong>Lokasi:</strong> Hybrid (Online & Surabaya)</li>
-        <li><strong>Benefit:</strong> E-Certificate, Networking, Swag</li>
+        <li><span class="icon"></span> <strong>Tanggal:</strong> 20 Mei 2026</li>
+        <li><span class="icon"></span> <strong>Lokasi:</strong> Hybrid (Online & Jakarta)</li>
+        <li><span class="icon"></span> <strong>Benefit:</strong> E-Certificate, Networking, Exclusive Swag</li>
       </ul>
     </section>
 
-    <section class="registration-form">
+    <section class="card registration-form">
       <h2>Registrasi Sekarang</h2>
       <form id="regForm">
         <div class="form-group">
-          <label for="name">Nama Lengkap:</label>
-          <input type="text" id="name" placeholder="Masukkan nama" required>
+          <label for="name">Nama Lengkap</label>
+          <input type="text" id="name" placeholder="Contoh: Budi Santoso" required>
         </div>
         <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="example@gmail.com" required>
+          <label for="email">Alamat Email</label>
+          <input type="email" id="email" placeholder="contoh@email.com" required>
         </div>
-        <button type="submit" id="submitBtn">Daftar Sekarang</button>
+        <button type="submit" id="submitBtn" class="btn-primary">Kirim Pendaftaran</button>
       </form>
-      <p id="success-msg" class="hidden">Selamat! Kamu berhasil terdaftar.</p>
+      <div id="success-msg" class="success-box hidden">
+        <h3>Pendaftaran Berhasil!</h3>
+        <p>Terima kasih telah mendaftar. Cek email kamu secara berkala untuk informasi selanjutnya.</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 GDGOC Web Dev Bootcamp.</p>
+    <p>&copy; 2026 GDGOC Web Dev Bootcamp. Built with passion.</p>
   </footer>
 
   <script src="script.js"></script>
