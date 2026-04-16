@@ -185,7 +185,7 @@ button {
   background-color: var(--primary-color);
   color: white;
   width: 100%;
-  /* Tombol form full width */
+  /* form button full width */
 }
 
 .btn-primary:hover {
@@ -237,6 +237,6 @@ footer {
   .card {
     padding: 25px;
     flex: 1 1 100%;
-    /* Pada HP, kartu jadi full width tumpuk kebawah */
+    /* in HP, card turn to full width stack to the bottom */
   }
 }
